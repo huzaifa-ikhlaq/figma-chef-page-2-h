@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer basse{
+    body{
+        font-family:  "Lato", sans-serif;
+    }
+}
+.bg-color{
+    @apply bg-[#f6f6f6]
+}

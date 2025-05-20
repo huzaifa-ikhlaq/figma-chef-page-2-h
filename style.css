@@ -20,12 +20,12 @@
 
 @layer components{
     .slide-btn{
-        @apply py-4 px-6  bg-white flex-grow justify-center  hover:text-white hover:bg-primary font-semibold md:text-xl text-sm rounded-r-10 flex items-center
+        @apply py-4 px-6  bg-white flex-grow justify-center  hover:text-white hover:bg-primary font-semibold 2xl:text-xl text-sm rounded-r-10 flex items-center
     }
 }
 @layer components{
     .drop-down-btn{
-        @apply bg-[#ffa12e] flex-grow justify-center text-white font-semibold text-sm lg:text-[20px] py-3 px-6 rounded-[10px]
+        @apply bg-[#ffa12e] flex-grow justify-center text-white font-semibold text-sm 2xl:text-[20px] py-3 px-6 rounded-[10px]
     }
 }
 

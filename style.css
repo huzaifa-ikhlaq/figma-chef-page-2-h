@@ -1,10 +1,37 @@
 @import "tailwindcss";
 
-@layer basse{
-    body{
-        font-family:  "Lato", sans-serif;
+
+@theme{
+  --radius-r-10: 10px;
+  --color-bg-color: #f6f6f6;
+  --color-primary: #ffa12e;
+   --color-secondary: #878787;
+  --text-10px: 10px;
+  --breakpoint-320px: 320px;            /* 320px */      
+  --breakpoint-375px: 23.4375rem;       /* 375px */
+  --breakpoint-425px: 26.5625rem;       /* 425px */
+  --breakpoint-768px: 48rem;            /* 768px */
+  --breakpoint-992px: 62rem;            /* 992px */
+  --breakpoint-1024px: 1024px;          /* 1024px */
+  --breakpoint-1200px: 75rem;           /* 1200px */
+  --breakpoint-1440px: 90rem;           /* 1440px */
+  --breakpoint-1540px: 96.25rem;        /* 1540px */
+}
+
+@layer components{
+    .slide-btn{
+        @apply py-4 px-6 bg-white flex-grow justify-center  hover:text-white hover:bg-primary font-semibold text-xl rounded-r-10 flex items-center
     }
 }
-.bg-color{
-    @apply bg-[#f6f6f6]
+@layer components{
+    .drop-down-btn{
+        @apply bg-[#ffa12e] text-white font-semibold text-[20px] py-3 px-6 rounded-[10px]
+    }
+}
+
+@layer base {
+  body {
+    padding: 6px;
+    font-family: "Lato", sans-serif;
+  }
 }

@@ -24,7 +24,7 @@
 }
 @layer components {
   .drop-down-btn {
-    @apply bg-[#ffa12e] flex-grow  text-white font-semibold text-sm 2xl:text-[20px] py-3 px-6 rounded-[10px];
+    @apply bg-[#ffa12e] flex  items-center justify-between flex-grow  text-white font-semibold text-sm 2xl:text-[20px] py-2.5 px-3 2xl:py-3 2xl:px-6 rounded-[10px];
   }
 }
 

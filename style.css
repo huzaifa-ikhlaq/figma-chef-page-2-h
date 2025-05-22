@@ -17,6 +17,12 @@
   --breakpoint-3xl: 103.75rem; /* 1660px */
 }
 
+@layer base {
+  .lato-font {
+    font-family: "Lato", sans-serif;
+  }
+}
+
 @layer components {
   .slide-btn {
     @apply py-2 px-2 lg:py-4 lg:px-6  bg-white flex-grow justify-center  hover:text-white hover:bg-primary font-semibold 2xl:text-xl text-sm rounded-r-10 flex items-center;

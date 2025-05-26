@@ -1,264 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="bg-bg-color lato-font p-2">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-bg-color lato-font">
+  <!-- <header>-----------</header> -->
+  <header class="relative p-5 coxs:p-8 sm:p-13.5 bg-black/60 rounded-r-10">
+    <div><img class="absolute inset-0 w-full h-full object-cover -z-20 rounded-r-10" src="img/Rectangle 6.png"
+        alt="image" /></div>
     <div>
-      <h1 class="text-3xl font-bold mb-7.5">Your Cart</h1>
-      <div
-        class="bg-white rounded-r-10 border-[1px] border-light-grey pt-12 px-7.5"
-      >
-        <!-- -- <header>----->
-        <div
-          class="text-lg font-bold flex justify-center md:justify-between items-center"
-        >
-          <div class="flex max-md:mb-1 max-md:text-2xl justify-center">
-            <h3>Dishes</h3>
-          </div>
-          <div
-            class="flex max-md:hidden text-sm lg:text-lg gap-[2.5vw] md:gap-[5vw] lg:gap-[10vw] xl:gap-[16vw] mb-5 pl-6 pr-6 md:pr-13"
-          >
-            <h3>Price</h3>
-            <h3>Qty.</h3>
-            <h3>Subtotal</h3>
-          </div>
-        </div>
-        <hr />
-        <!-- ----</header> -- -->
-        <!-- <cart-section> -->
-        <!-- <card-1> -->
-        <div class="flex max-md:flex-col justify-between mt-7.5 md:mb-10">
-          <div class="flex max-md:items-center max-md:flex-col">
-            <img
-              class="size-30 md:size-37.5 max-md:mb-2 object-cover"
-              src="img/image (4).png"
-              alt=""
-            />
-            <div
-              class="flex flex-col gap-y-0.5 md:gap-y-1.5 max-md:items-center md:ml-5"
-            >
-              <h2 class="text-xl font-bold">Palak Gobi (vegan)</h2>
-              <span class="text-primary text-sm md:text-base"
-                >Michael Robert (Group Name)</span
-              >
-              <p
-                class="text-light-grey max-md:text-center md:max-w-90 leading-4 text-sm lg:text-base"
-              >
-                Indian · Hyderabadi · Mughlai · South Indian Comfort · Pakistani
-                · North Indian
-              </p>
-              <div class="flex items-center">
-                <img
-                  class="mr-1 size-3 lg:w-3 lg:h-4"
-                  src="img/Group 1000007434.png"
-                  alt=""
-                />
-                <span class="text-secondary text-sm lg:text-base max-md:mt-1"
-                  >Remove</span
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex max-md:flex-col max-md:mt-3 items-center justify-center gap-[2.5vw] md:gap-[5vw] lg:gap-[10vw] xl:gap-[16vw] mb-5 pl-6 pr-6 md:pr-13"
-          >
-            <span class="lg:text-xl max-md:hidden">$45.00</span>
-            <span class="lg:text-xl max-md:hidden">02</span>
-            <span class="lg:text-xl max-md:hidden">$90.00</span>
-
-            <!-- <table>--------------</table> -->
-            <table class="md:hidden">
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Price:</h3>
-                </td>
-                <td><span class="mb-2">$45.00</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Qty.:</h3>
-                </td>
-                <td><span class="mb-2">02</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Subtotal:</h3>
-                </td>
-                <td><span class="mb-2">$90.00</span></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <hr />
-        <!-- </card-1> -->
-        <!-- <card-2> -->
-        <div class="flex max-md:flex-col justify-between mt-7.5 md:mb-10">
-          <div class="flex max-md:items-center max-md:flex-col">
-            <img
-              class="size-30 md:size-37.5 max-md:mb-2 object-cover"
-              src="img/image (4).png"
-              alt=""
-            />
-            <div
-              class="flex flex-col gap-y-0.5 md:gap-y-1.5 max-md:items-center md:ml-5"
-            >
-              <h2 class="text-xl font-bold">Palak Gobi (vegan)</h2>
-              <span class="text-primary text-sm md:text-base"
-                >Michael Robert (Group Name)</span
-              >
-              <p
-                class="text-light-grey max-md:text-center md:max-w-90 leading-4 text-sm lg:text-base"
-              >
-                Indian · Hyderabadi · Mughlai · South Indian Comfort · Pakistani
-                · North Indian
-              </p>
-              <div class="flex items-center">
-                <img
-                  class="mr-1 size-3 lg:w-3 lg:h-4"
-                  src="img/Group 1000007434.png"
-                  alt=""
-                />
-                <span class="text-secondary text-sm lg:text-base max-md:mt-1"
-                  >Remove</span
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex max-md:flex-col max-md:mt-3 items-center justify-center gap-[2.5vw] md:gap-[5vw] lg:gap-[10vw] xl:gap-[16vw] mb-5 pl-6 pr-6 md:pr-13"
-          >
-            <span class="lg:text-xl max-md:hidden">$45.00</span>
-            <span class="lg:text-xl max-md:hidden">02</span>
-            <span class="lg:text-xl max-md:hidden">$90.00</span>
-
-            <!-- <table>--------------</table> -->
-            <table class="md:hidden">
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Price:</h3>
-                </td>
-                <td><span class="mb-2">$45.00</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Qty.:</h3>
-                </td>
-                <td><span class="mb-2">02</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Subtotal:</h3>
-                </td>
-                <td><span class="mb-2">$90.00</span></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <hr />
-        <!-- </card-2> -->
-        <!-- <card-3> -->
-        <div class="flex max-md:flex-col justify-between mt-7.5 md:mb-10">
-          <div class="flex max-md:items-center max-md:flex-col">
-            <img
-              class="size-30 md:size-37.5 max-md:mb-2 object-cover"
-              src="img/image (4).png"
-              alt=""
-            />
-            <div
-              class="flex flex-col gap-y-0.5 md:gap-y-1.5 max-md:items-center md:ml-5"
-            >
-              <h2 class="text-xl font-bold">Palak Gobi (vegan)</h2>
-              <span class="text-primary text-sm md:text-base"
-                >Michael Robert (Group Name)</span
-              >
-              <p
-                class="text-light-grey max-md:text-center md:max-w-90 leading-4 text-sm lg:text-base"
-              >
-                Indian · Hyderabadi · Mughlai · South Indian Comfort · Pakistani
-                · North Indian
-              </p>
-              <div class="flex items-center">
-                <img
-                  class="mr-1 size-3 lg:w-3 lg:h-4"
-                  src="img/Group 1000007434.png"
-                  alt=""
-                />
-                <span class="text-secondary text-sm lg:text-base max-md:mt-1"
-                  >Remove</span
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex max-md:flex-col max-md:mt-3 items-center justify-center gap-[2.5vw] md:gap-[5vw] lg:gap-[10vw] xl:gap-[16vw] mb-5 pl-6 pr-6 md:pr-13"
-          >
-            <span class="lg:text-xl max-md:hidden">$45.00</span>
-            <span class="lg:text-xl max-md:hidden">02</span>
-            <span class="lg:text-xl max-md:hidden">$90.00</span>
-
-            <!-- <table>--------------</table> -->
-            <table class="md:hidden">
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Price:</h3>
-                </td>
-                <td><span class="mb-2">$45.00</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Qty.:</h3>
-                </td>
-                <td><span class="mb-2">02</span></td>
-              </tr>
-              <tr>
-                <td class="flex justify-end">
-                  <h3 class="mr-[30vw] mb-2">Subtotal:</h3>
-                </td>
-                <td><span class="mb-2">$90.00</span></td>
-              </tr>
-            </table>
-          </div>
-        </div>   
-        <!-- </card-3> -->
-      </div>
-      <!-- </cart-section> -->
-
-      <!-- <total-cart-secton> -->
-      <!-- <row-1> -->
-      <h1 class="text-3xl font-bold my-7.5">Cart Totals</h1>
-      <div
-        class="bg-white rounded-r-10 border-[1px] border-light-grey pb-12 pt-12.5 px-7.5"
-      >
-        <div class="flex justify-between mb-7">
-          <h2 class="text-xl 2xl:text-2xl font-semibold">Subtotal</h2>
-          <span class="text-2xl 2xl:text-3xl font-semibold">$355.00</span>
-        </div>
-        <hr />
-        <!-- </row-1> -->
-        <!-- <row-2> -->
-        <div class="flex justify-between mt-7">
-          <h2 class="text-xl 2xl:text-2xl font-semibold">Total</h2>
-          <span class="text-2xl 2xl:text-3xl font-semibold">$355.00</span>
-        </div>
-        <!-- </row-2> -->
-        <button
-          class="bg-primary text-white text-lg md:text-xl rounded-r-10 font-semibold py-3 w-full mt-13"
-        >
-          Proceed to cheakout
-        </button>
-      </div>
-      <!-- </total-cart-section> -->
+      <h1 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl leading-7 text-white font-bold">
+        Explore Our Talented Chefs</h1>
+      <p class="xl:text-xl lg:text-lg md:text-xs text-xs text-white pt-2">Ready to discover amazing
+        chefs in your area?</p>
     </div>
-  </body>
+  </header>
+  <!-- <section-1>---------</section-1> -->
+  <section class="mt-20">
+    <div class="flex flex-wrap gap-3 items-center lg:gap-5">
+      <div class="mr-5.5">
+        <span class="bg-white group rounded-full size-12 lg:size-15 flex justify-center items-center hover:bg-primary">
+          <svg class="fill-black group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M10.53 5.47a.75.75 0 0 1 0 1.06l-4.72 4.72H20a.75.75 0 0 1 0 1.5H5.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0"
+              clip-rule="evenodd" stroke-width="0.5" stroke="currentColor" />
+          </svg>
+        </span>
+      </div>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png" alt="" />All
+        Cuisines</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />Indian</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />American</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />Pakistani</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />Caribbean</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />Mexican</button>
+      <button class="slide-btn"><img class="mr-2.5 max-lg:size-6" src="img/Group 1000007362.png"
+          alt="" />Southern</button>
+
+      <div class="ml-5.5">
+        <span class="bg-white group rounded-full size-12 lg:size-15 flex justify-center items-center hover:bg-primary">
+          <svg class="fill-black group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06"
+              clip-rule="evenodd" stroke-width="0.5" fill="currentColor" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- <section-2>-------</section-2> -->
+  <section class="pt-20">
+    <div class="flex items-center w-ful flex-wrap gap-5 justify-between">
+      <div>
+        <h2 class=" font-semibold text-3xl">All Chefs</h2>
+      </div>
+
+
+      <div class="flex  max-lg:w-full">
+
+        <div class="flex items-center relative   max-lg:w-full">
+          <img class="absolute ml-4.5 size-6" src="img/tdesign_search.png" alt="">
+          <input class="bg-white py-3.5 px-13  lg:py-2.5  2xl:py-3.5    max-lg:w-full    rounded-r-10" type="search"
+            placeholder="search here..." />
+          <span class="rounded-r-10 ml-3  bg-primary h-12 w-15 flex items-center justify-center lg:hidden"><svg
+              class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6.17 5a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 0 1 0-2zM15 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2zM9 17a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2z"
+                stroke-width="0.5" stroke="#fff" />
+            </svg></span>
+        </div>
+
+        <div class="max-lg:pt-5 px-2 flex items-center gap-x-3 max-lg:hidden">
+          <div class=" drop-down-btn">
+            <a href="#">Rating </a>
+            <img class="ml-1" src="img/Vector (1).png" alt="">
+          </div>
+          <div class="drop-down-btn ">
+            <a href="#">Price Range</a>
+            <img class="ml-1 " src="img/Vector (1).png" alt="">
+          </div>
+          <div class="drop-down-btn  ">
+            <a href="#">Availability </a>
+            <img class="ml-1" src="img/Vector (1).png" alt="">
+          </div>
+          <div class="drop-down-btn ">
+            <a href="#">Dietary Expertise </a>
+            <img class="ml-1" src="img/Vector (1).png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed fle items-end z-50 bg-black/40 inset-0  h-screen w-full hidden ">
+        <div class="bg-white z-40   rounded-t-4xl h-100 w-full overflow-scroll ">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="ml-4  font-semibold">Filter</h3>
+            </div>
+            <div class="hover:bg-light-grey/20 mr-4 flex items-center justify-center size-6 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="m11.25 4.75l-6.5 6.5m0-6.5l6.5 6.5" />
+              </svg>
+            </div>
+          </div>
+          <hr class="mt-2">
+          <div class="pt-5 px-2 flex flex-col gap-y-3">
+            <div class="drop-down-btn    ">
+              <div class="flex items-center justify-between">
+                <a href="#">Rating </a>
+                <img class="relative left-1" src="img/Vector (1).png" alt="">
+              </div>
+            </div>
+            <div class="drop-down-btn flex items-center justify-between">
+              <a href="#">Price Range</a>
+              <img class="relative left-1 " src="img/Vector (1).png" alt="">
+            </div>
+            <div class="drop-down-btn flex items-center justify-between ">
+              <a href="#">Availability </a>
+              <img class="relative left-1" src="img/Vector (1).png" alt="">
+              </a>
+            </div>
+            <div class="drop-down-btn flex items-center justify-between">
+              <a href="#">Dietary Expertise </a>
+              <img class="relative left-1" src="img/Vector (1).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- <section-3>-----</section-3> -->
+  <section class="mt-10 mb-30 mx-2">
+    <div class="grid gap-12 xl:grid-cols-3  sm:grid-cols-2 ">
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="absolute  mt-3 -ml-2.5 " src="img/Group 1000007528.png" alt="" />
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="absolute  mt-3 -ml-2.5 " src="img/Group 1000007528.png" alt="" />
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative  bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative  bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white rounded-r-10 shadow-lg">
+          <img class="w-full h-auto" src="img/image (1).png" alt="image" />
+          <div class="flex justify-between mr-3.5">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold pt-4">Chef Name</h3>
+              <span class="text-light-grey py-2.5">Cuisine Speciality</span>
+              <div class="flex items-center ">
+                <img class="pr-1.5" src="img/Star 5.png" alt="" />
+                <span class="text-primary">4.8 (134 reviews)</span>
+              </div>
+              <div class=" pb-5.5">
+                <span class="font-bold">Availability:<span class="text-light-grey">Thu-Sun</span></span>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="md:size-34 size-25 shadow-xl relative bottom-14 md:bottom-18  border-2 border-primary  rounded-full"
+                src="img/image (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+</body>
+
 </html>

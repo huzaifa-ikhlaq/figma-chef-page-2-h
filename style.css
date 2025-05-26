@@ -2,6 +2,7 @@
 
 @theme {
   --radius-r-10: 10px;
+  --radius-r-40: 40px;
   --color-bg-color: #f6f6f6;
   --color-primary: #ffa12e; /* Yellow */
   --color-secondary: #c41230; /* Red */

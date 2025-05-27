@@ -1199,6 +1199,11 @@
       margin-block: calc(var(--spacing) * 15);
     }
   }
+  .lg\:mt-0 {
+    @media (width >= 62rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:mt-15 {
     @media (width >= 62rem) {
       margin-top: calc(var(--spacing) * 15);

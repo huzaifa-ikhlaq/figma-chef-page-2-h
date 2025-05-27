@@ -6,527 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 m-1">
 
-    <div class="grid grid-cols-7 max-xl:grid-cols-2 max-lg:grid-cols-1 lg:gap-12.5">
-
-        <!---------------- <section-1>---------</section-1> ----------------------------->
-        <section class="xl:col-span-4">
-            <div class="flex flex-col">
-                <h1 class="font-semibold text-2xl 3xl:text-3xl my-5 md:my-7.5 lg:mt-0">Billing Address</h1>
-                <div
-                    class="px-2 xs:px-7.5 pb-7.5 mb-5 md:mb-7.5 lg:mb-15 pt-9  rounded-r-10 bg-white border border-gray-500">
-                    <form action="#" method="post">
-                        <!-- <row-1></row-1> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class="flex flex-col w-full  2xl:w-1/2  mb-7.5">
-                                <label class=" 3xl:text-xl" for="name">Full Name <span
-                                        class="text-xs 3xl:text-base text-light-grey">(as
-                                        on payment
-                                        card)</span></label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5 text-sm mt-2.5 rounded-r-10 indent-4 pr55 border border-gray-500"
-                                    type="text" name="" placeholder="Name" required id="">
-                            </div>
-                            <div class="flex flex-col w-full 2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="phone">Phone Number <span
-                                        class="text-xs 3xl:text-base text-light-grey">
-                                        (optional)</span></label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4 border border-gray-500"
-                                    type="tel" name="" placeholder="Enter number" required id="">
-                            </div>
+    <section class="w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5  gap-5">
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary active:text-white active:bg-primary py-2.5 ">Personal
+                Information</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Account
+                Security</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary  py-2.5 ">Notifications
+                Preferences</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl  font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Payment
+                Details</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl flex-grow font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Delete
+                Account</button>
+        </div>
+    </section>
+    <!-- <section-2>---------</section-2> -->
+    <section>
+        <h1 class="font-semibold text-2xl 3xl:text-3xl max-md:mb-5 max-md:mt-7.5 mt-15 mb-7.5">Personal Information</h1>
+        <div class="bg-white rounded-r-10 border border-gray-500 px-7.5 pt-9 pb-10">
+            <form action="">
+                <div class="relative md:flex flex-row-reverse gap-x-7 ">
+                    <div class="flex justify-center max-md:mb-7.5">
+                        <img class="size-48  mt-2.5  " src="img/Rectangle 94.png" alt="">
+                        <img class=" absolute size-7.5 top-42.5 max-md:ml-37.5 max-lg:ml-29.5 lg:ml-32 xl:34 2xl:ml-33" src="img/Group 1000007524.png" alt="">
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <div class="flex flex-col">
+                            <label for="name" class="mb-3">Name</label>
+                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="text"
+                                name="Name" placeholder="Enter name" id="">
                         </div>
-                        <!-- <row-2></row-2> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="address">Street Address</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter Street Address" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5 ">
-                                <label class="3xl:text-xl" for="address2">Address Line 2</label>
-                                <input
-                                    class="py-3 w-full   2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Apartment, Suit, Unit, Building, Floor etc.s"
-                                    required id="">
-                            </div>
+                        <div class="flex flex-col mt-7.5 max-md:mt-5">
+                            <label for="name" class="mb-3">Email</label>
+                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="email"
+                                name="Name" placeholder="user123@gmail.com    " id="">
                         </div>
-                        <!-- <row-3></row-3> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class=" flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="city">City</label>
-                                <input
-                                    class="py-3 w-full  2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter City" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="state">State</label>
-                                <input
-                                    class="py-3 w-full  2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4 border border-gray-500"
-                                    type="text" name="" placeholder="Enter State" required id="">
-                            </div>
-                        </div>
-                        <!-- <row-4></row-4> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class=" flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="zipcode">Zip Code</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter  Zip code" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="country">Country</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter Country" required id="">
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                <!---------------- <form-2>---------------</form-2> -------------->
-                <h1 class="font-semibold text-2xl 3xl:text-3xl mb-5 md:mb-7.5">Delivery Address</h1>
-                <div
-                    class="px-2 xs:px-7.5 pb-7.5 pt-9 mb-5 md:mb-7.5  rounded-r-10 bg-white border border-gray-500">
-                    <form action="#" method="post">
-                        <div class="flex items-center mb-7.5">
-                            <input class="size-4 3xl:size-5 mr-2.5" type="checkbox" name="" id="">
-                            <span class="text-light-grey text-base 3xl:text-lg">Fill same as <span
-                                    class="text-secondary text-base 3xl:text-lg">“Billing
-                                    Address”</span></span>
-                        </div>
-                        <!-- <row-1></row-1> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between">
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="name">Recipient Name </label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5 text-sm mt-2.5 rounded-r-10 indent-4 pr55 border border-gray-500"
-                                    type="text" name="" placeholder="Name" required id="">
-                            </div>
-                            <div class="flex flex-col w-full 2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="phone">Phone Number </label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4 pr55 border border-gray-500"
-                                    type="tel" name="" placeholder="Enter no." required id="">
-                            </div>
-                        </div>
-                        <!-- <row-2></row-2> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="address">Street Address</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter Street Address" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5 ">
-                                <label class="3xl:text-xl" for="address2">Address Line 2</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Apartment, Suit, Unit, Building, Floor etc.s"
-                                    required id="">
-                            </div>
-                        </div>
-                        <!-- <row-3></row-3> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between  ">
-                            <div class=" flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="Country">Country</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter Country" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="City">City</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter City" required id="">
-                            </div>
-                        </div>
-                        <!-- <row-4></row-4> -->
-                        <div class="flex xl:gap-x-7.5 max-xl:flex-wrap justify-between">
-                            <div class=" flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="State ">State</label>
-                                <input
-                                    class="py-3 w-full  2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Enter  State" required id="">
-                            </div>
-                            <div class="flex flex-col w-full  2xl:w-1/2 mb-7.5">
-                                <label class="3xl:text-xl" for="Zip Code">Zip Code</label>
-                                <input
-                                    class="py-3 w-full 2xl:mr-7.5  text-sm mt-2.5 rounded-r-10 indent-4  border border-gray-500"
-                                    type="text" name="" placeholder="Zip Code" required id="">
-                            </div>
-                        </div>
-                        <!------------- <comment-area>---------------</comment-area> ------->
-                        <h3 class="3xl:text-xl mb-2.5">Delivery Instructions</h3>
-                        <div class="flex items-center space-x-3">
-                            <textarea class="w-full border border-gray-500 max-md:text-sm rounded-r-10 p-4 pb-34  "
-                                placeholder="Ex: gate code is 123, call when you arrive"></textarea>
-                        </div>
-                    </form>
+                <div class="flex flex-col mt-7.5 max-md:mt-5">
+                    <label for="name" class="mb-3 ">Phone Number</label>
+                    <div class="flex max-xs:flex-col  w-full">
+                        <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="tel" name="Name"
+                            placeholder="(+92) 123 456 7890    " id="">
+                        <button
+                            class=" text-sm lg:text-base 3xl:text-xl ml-5  text-white max-xs:mt-2.5 max-xs:w-full max-xs:ml-0 py-2.5 lg:py-3 3xl:py-2.5 px-4 rounded-r-10 bg-secondary font-semibold">VerifyOTP</button>
+                    </div>
                 </div>
+                <div class="flex flex-col mt-7.5 max-md:mt-5">
+                    <label for="name" class="mb-3">Service Area/Zip Code </label>
+                    <input class="py-2 lg:py-3  indent-4 border border-gray-500 rounded-r-10" type="text" name="Name"
+                        placeholder="12345    " id="">
+                </div>
+            </form>
+            <h2 class="text-2xl font-bold max-md:mb-5 max-md:mt-7.5 mt-12.5 mb-7.5 ">Set your availability this week</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 justify-items-center    gap-5">
+                <button class="border w-full border-light-grey text-light-grey rounded-r-10 py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Mon</button>
+                <button class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Tue</button>
+                <button class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Wed</button>
+                <button class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Thu</button>
+                <button class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Fri</button>
+                <button class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sat</button>
+                <button class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sun</button>
             </div>
-        </section>
-        <!---------------- <seection-2>--------</seection-2> ---------------------------->
-        <section class="xl:col-span-3">
-            <div class="flex flex-col">
-                <!-- <page-1>-----------</page-1> -->
-                <h1 class="font-semibold text-2xl 3xl:text-3xl mb-5 md:mb-7.5 ">Your Order</h1>
-                <div class="bg-white rounded-r-10 px-2 xs:px-7.5 py-9  border border-gray-500">
-                    <h3 class=" 3xl:text-xl">Delivery on <span class=" font-semibold 3xl:font-semibold">Sat</span> <span
-                            class="text-secondary font-semibold  3xl:font-semibold">26, 2025</span>
-                    </h3>
-
-                    <table class="mt-10  w-full table-fixed ">
-                        <thead>
-                            <tr class="font-bold co3xl:text-xl  ">
-                                <th class="w-[60%] coxs:w-[65%] text-start  ">Dishes</th>
-                                <th class="w-[40%] max-coxs:w-[25%] text-start max-sm:text-center">QTY.</th>
-                                <th class="w-[20%] max-sm:w-[27%] xl:w-[25%] text-start">Subtotal</th>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <hr class=" border-gray-400 mt-4 md:mt-7.5">
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-                    <!-- <body-table></body-table> -->
-                    <div class="max-h-[467px] overflow-x-hidden overflow-y-scroll">
-                        <table class=" w-full table-fixed">
-                            <tbody>
-                                <!-- <row-1></row-1> -->
-                                <tr>
-                                    <td class="w-[60%] coxs:w-[65%]">
-                                        <div class="flex items-center my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class=" ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium w-[40%] max-coxs:w-[24%]   max-sm:text-center  coxs:text-lg">
-                                        04</td>
-                                    <td class="font-medium w-[20%] max-sm:w-[27%] max-coxs:w-[24%]    coxs:text-lg">
-                                        <span>$12.15</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-2></row-2> -->
-                                <tr>
-                                    <td class="w-[60%] coxs:w-[65%]">
-                                        <div class="flex items-center my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class=" ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium w-[40%] max-coxs:w-[25%]   max-sm:text-center  coxs:text-lg">
-                                        04</td>
-                                    <td class="font-medium w-[20%] max-sm:w-[27%] max-coxs:w-[24%]    coxs:text-lg">
-                                        <span>$12.15</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-3></row-3> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1  coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-4></row-4> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-5></row-5> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-6></row-6> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-7></row-7> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-8></row-8> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-9></row-9> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-9></row-9> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-9></row-9> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex my-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold">Member Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium  max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <hr class=" border-gray-400 ">
-                                    </td>
-                                </tr>
-                                <!-- <row-10></row-10> -->
-                                <tr>
-                                    <td>
-                                        <div class="flex mt-7.5">
-                                            <img class="size-12.5 object-cover rounded-r-10" src="img/image (4).png"
-                                                alt="">
-                                            <div class="ml-1 coxs:ml-2.5">
-                                                <h3 class="max-xs:text-sm text-base 3xl:text-lg font-bold   ">Member
-                                                    Name
-                                                </h3>
-                                                <span class="max-xs:text-sm text-base 3xl:text-lg text-light-grey">Dish
-                                                    Name</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="font-medium max-sm:text-center coxs:text-lg">04</td>
-                                    <td class="font-medium coxs:text-lg"><span>$12.15</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="flex justify-between my-7.5">
-                        <div class="">
-                            <h3 class="3xl:text-xl font-semibold">Subtotal</h3>
-                        </div>
-                        <div><span class="3xl:text-xl mr-1.5  font-medium">$120.50</span></div>
-                    </div>
-                    <hr class="border-gray-500">
-                    <div class="flex justify-between mt-7.5">
-                        <div class="">
-                            <h3 class=" text-lg 3xl:text-2xl  text-secondary font-semibold">Total</h3>
-                        </div>
-                        <div><span class=" text-lg 3xl:text-2xl  text-secondary  font-medium">$120.50</span>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- <page-2>-----------</page-2> -->
-                <section>
-                    <h1 class="font-semibold text-2xl 3xl:text-3xl my-5 lg:mt-15 md:my-7.5">Promo code</h1>
-                    <div class="bg-white rounded-r-10 mb-5 md:mb-7.5 lg:mb-15 border border-gray-500 px-2 xs:px-7.5 pt-7.5 pb-9 ">
-                        <!-- <add-code-input></add-code-input> -->
-                        <h3 class=" 3xl:text-xl mb-2.5">Promo code</h3>
-                        <div class="flex items-center">
-                            <input
-                                class="py-2 md:py-3 indent-4 w-full rounded-r-10 mr-2.5 sm:mr-5 border border-gray-500"
-                                type="text" name="" placeholder="Add code" id="">
-                            <button
-                                class="3xl:text-xl rounded-r-10 font-semibold bg-secondary text-white  py-2 md:py-3 px-6 xs:px-8.5 ">Apply</button>
-                        </div>
-                    </div>
-                    <!-- <radio-input>-------</radio-input> -->
-                    <h2 class="text-xl 3xl:text-2xl font-semibold mb-5  md:mb-7.5 ">Make it recurring order and save!</h2>
-                    <div class=" mb-7.5  max-lg:ml-2">
-                        <div class="flex items-center mb-5">
-                            <input class="size-5 xs:size-6" type="radio" name="order_frequency" id="">
-                            <label class="3xl:text-xl ml-4">Order Once</label>
-                        </div>
-                        <div class="flex items-center mb-5">
-                            <input class="size-5 xs:size-6" type="radio" name="order_frequency" id="">
-                            <label class="3xl:text-xl ml-4">Every other week <span class="font-mixed text-secondary"> 5%
-                                    off</span></label>
-                        </div>
-                        <div class="flex items-center mb-5">
-                            <input class=" size-5 xs:size-6" type="radio" name="order_frequency" id="">
-                            <label class="3xl:text-xl ml-4">Every week <span class="font-mixed text-secondary"> 10%
-                                    off</span></label>
-                        </div>
-                    </div>
-                    <!-- <button>----------</button> -->
-                    <button
-                        class="text-base 3xl:text-xl text-white rounded-r-10 font-semibold py-3 md:py-4 bg-primary w-full">Place
-                        Order</button>
-                </section>
+            <div class="flex justify-end max-sm:w-full">
+                <button class=" max-sm:w-full  text-white max-md:text-sm md:text-base 3xl:text-xl font-semibold bg-primary  max-md:py-2 max-md:px-6 py-3 px-10 rounded-r-10  mt-8 sm:mt-10">Save
+                    Changes
+                </button>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </body>
 
+</html>

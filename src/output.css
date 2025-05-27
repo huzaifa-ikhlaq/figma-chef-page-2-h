@@ -1209,6 +1209,11 @@
       margin-top: calc(var(--spacing) * 15);
     }
   }
+  .lg\:mb-1 {
+    @media (width >= 62rem) {
+      margin-bottom: calc(var(--spacing) * 1);
+    }
+  }
   .lg\:mb-15 {
     @media (width >= 62rem) {
       margin-bottom: calc(var(--spacing) * 15);

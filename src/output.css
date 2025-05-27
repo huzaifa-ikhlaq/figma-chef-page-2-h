@@ -464,6 +464,9 @@
   .max-h-\[480px\] {
     max-height: 480px;
   }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
@@ -1364,6 +1367,11 @@
   .\32 xl\:mr-7\.5 {
     @media (width >= 90rem) {
       margin-right: calc(var(--spacing) * 7.5);
+    }
+  }
+  .\32 xl\:w-1\/2 {
+    @media (width >= 90rem) {
+      width: calc(1/2 * 100%);
     }
   }
   .\32 xl\:w-\[50\%\] {

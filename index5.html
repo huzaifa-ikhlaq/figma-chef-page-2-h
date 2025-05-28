@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 m-1">
+
+    <section class="w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-2.5  3xl:gap-5">
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary active:text-white active:bg-primary py-2.5 ">Personal
+                Information</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Account
+                Security</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary  py-2.5 ">Notifications
+                Preferences</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl  font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Payment
+                Details</button>
+            <button
+                class="w-full text-sm md:text-base 3xl:text-xl flex-grow font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Delete
+                Account</button>
+        </div>
+    </section>
+    <!-- <section-2>---------</section-2> -->
+    <section>
+        <h1 class="font-semibold text-2xl 3xl:text-3xl max-md:mb-5 max-md:mt-7.5 mt-15 mb-7.5">Personal Information</h1>
+        <div class="bg-white rounded-r-10 border border-gray-500 px-7.5 pt-9 pb-10">
+            <form action="">
+                <div class="relative md:flex flex-row-reverse gap-x-7 ">
+                    <div class="flex justify-center max-md:mb-7.5">
+                        <img class="size-48 shrink-0 mt-2.5  " src="img/Rectangle 94.png" alt="">
+                        <img class=" absolute size-7.5 top-43 max-md:ml-37.5 md:ml-37.5"
+                            src="img/Group 1000007524.png" alt="">
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <div class="flex flex-col">
+                            <label for="name" class="mb-3">Name</label>
+                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="text"
+                                name="Name" placeholder="Enter name" id="">
+                        </div>
+                        <div class="flex flex-col mt-7.5 max-md:mt-5">
+                            <label for="name" class="mb-3">Email</label>
+                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="email"
+                                name="Name" placeholder="user123@gmail.com    " id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-7.5 max-md:mt-5">
+                    <label for="name" class="mb-3 ">Phone Number</label>
+                    <div class="flex max-xs:flex-col gap-x-5  w-full">
+                        <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="tel"
+                            name="Name" placeholder="(+92) 123 456 7890    " id="">
+                        <button
+                            class=" text-sm lg:text-base 3xl:text-xl   text-white max-xs:mt-2.5 max-xs:w-full  py-2.5 lg:py-3 3xl:py-2.5 px-4 rounded-r-10 bg-secondary shrink-0 font-semibold">Verify OTP</button>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-7.5 max-md:mt-5">
+                    <label for="name" class="mb-3">Service Area/Zip Code </label>
+                    <input class="py-2 lg:py-3  indent-4 border border-gray-500 rounded-r-10" type="text" name="Name"
+                        placeholder="12345    " id="">
+                </div>
+            </form>
+            <h2 class="text-2xl font-bold max-md:mb-5 max-md:mt-7.5 mt-12.5 mb-7.5 ">Set your availability this week
+            </h2>
+            <div class="text-sm md:text-base  grid grid-cols-2 xs:grid-cols-4 md:grid-cols-7  justify-items-center  gap-2.5  3xl:gap-5 ">
+                <button
+                    class="border w-full border-light-grey text-light-grey rounded-r-10 py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Mon</button>
+                <button
+                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Tue</button>
+                <button
+                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Wed</button>
+                <button
+                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Thu</button>
+                <button
+                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Fri</button>
+                <button
+                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sat</button>
+                <button
+                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sun</button>
+            </div>
+            <div class="flex justify-end max-sm:w-full">
+                <button
+                    class=" max-sm:w-full  text-white max-md:text-sm md:text-base 3xl:text-xl font-semibold bg-primary  max-md:py-2 max-md:px-6 py-3 px-10 rounded-r-10  mt-8 sm:mt-10">Save
+                    Changes
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

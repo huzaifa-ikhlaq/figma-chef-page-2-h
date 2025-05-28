@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100 m-1">
-
+<body class="bg-gray-100">
     <section class="w-full">
         <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-2.5  3xl:gap-5">
             <button
-                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary active:text-white active:bg-primary py-2.5 ">Personal
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Personal
                 Information</button>
             <button
-                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary py-2.5 ">Account
+                class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary  active:text-white active:bg-primary py-2.5 ">Account
                 Security</button>
             <button
                 class="w-full text-sm md:text-base 3xl:text-xl font-semibold text-primary border rounded-r-10 border-primary  py-2.5 ">Notifications
@@ -34,67 +33,84 @@
                 Account</button>
         </div>
     </section>
-    <!-- <section-2>---------</section-2> -->
+    <!-- <section-2></section-2> -->
     <section>
-        <h1 class="font-semibold text-2xl 3xl:text-3xl max-md:mb-5 max-md:mt-7.5 mt-15 mb-7.5">Personal Information</h1>
-        <div class="bg-white rounded-r-10 border border-gray-500 px-7.5 pt-9 pb-10">
+        <h2 class="text-2xl 3xl:text-3xl font-semibold mt-7.5 mb-5 lg:mt-15 lg:mb-7.5">Account Security</h2>
+        <div class="bg-white px-5 xs:px-7.5 pt-7.5 pb-11 rounded-r-10 border border-gray-300">
+            <h3 class="text-base 3xl:text-22px mb-5 lg:mb-7.5 font-semibold">Change Password</h3>
             <form action="">
-                <div class="relative md:flex flex-row-reverse gap-x-7 ">
-                    <div class="flex justify-center max-md:mb-7.5">
-                        <img class="size-48 shrink-0 mt-2.5  " src="img/Rectangle 94.png" alt="">
-                        <img class=" absolute size-7.5 top-43 max-md:ml-37.5 md:ml-37.5"
-                            src="img/Group 1000007524.png" alt="">
-                    </div>
-                    <div class="flex flex-col w-full">
-                        <div class="flex flex-col">
-                            <label for="name" class="mb-3">Name</label>
-                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="text"
-                                name="Name" placeholder="Enter name" id="">
-                        </div>
-                        <div class="flex flex-col mt-7.5 max-md:mt-5">
-                            <label for="name" class="mb-3">Email</label>
-                            <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="email"
-                                name="Name" placeholder="user123@gmail.com    " id="">
-                        </div>
-                    </div>
+                <!-- <input-1></input-1> -->
+                <div class="relative flex">
+                    <input class="w-full max-md:text-sm py-2 lg:py-4 indent-4 border border-gray-500 rounded-r-10 mb-5 " type="password"
+                        name="" placeholder="Current Password" id="">
+                    <span class="absolute right-4 top-2.5 lg:top-5  "> <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <path fill="#878787"
+                                d="M12 9a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5c-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0a9.821 9.821 0 0 0-17.64 0"
+                                stroke-width="0.5" stroke="#878787" />
+                        </svg></span>
                 </div>
-                <div class="flex flex-col mt-7.5 max-md:mt-5">
-                    <label for="name" class="mb-3 ">Phone Number</label>
-                    <div class="flex max-xs:flex-col gap-x-5  w-full">
-                        <input class="py-2 lg:py-3 w-full indent-4 border border-gray-500 rounded-r-10" type="tel"
-                            name="Name" placeholder="(+92) 123 456 7890    " id="">
-                        <button
-                            class=" text-sm lg:text-base 3xl:text-xl   text-white max-xs:mt-2.5 max-xs:w-full  py-2.5 lg:py-3 3xl:py-2.5 px-4 rounded-r-10 bg-secondary shrink-0 font-semibold">Verify OTP</button>
-                    </div>
+                    <!-- <input-2></input-2> -->
+                <div class="relative flex">
+                    <input class="w-full max-md:text-sm py-2 lg:py-4 indent-4 border border-gray-500 rounded-r-10 mb-5 " type="password"
+                        name="" placeholder="New Password" id="">
+                    <span class="absolute right-4 top-2.5 lg:top-5  "><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 1200 1200">
+                            <path fill="#878787"
+                                d="M669.727 273.516c-22.891-2.476-46.15-3.895-69.727-4.248c-103.025.457-209.823 25.517-310.913 73.536c-75.058 37.122-148.173 89.529-211.67 154.174C46.232 529.978 6.431 577.76 0 628.74c.76 44.162 48.153 98.67 77.417 131.764c59.543 62.106 130.754 113.013 211.67 154.174q4.126 2.003 8.276 3.955l-75.072 131.102l102.005 60.286l551.416-960.033l-98.186-60.008zm232.836 65.479l-74.927 129.857c34.47 44.782 54.932 100.006 54.932 159.888c0 149.257-126.522 270.264-282.642 270.264c-6.749 0-13.29-.728-19.922-1.172l-49.585 85.84c22.868 2.449 45.99 4.233 69.58 4.541c103.123-.463 209.861-25.812 310.84-73.535c75.058-37.122 148.246-89.529 211.743-154.174c31.186-32.999 70.985-80.782 77.417-131.764c-.76-44.161-48.153-98.669-77.417-131.763c-59.543-62.106-130.827-113.013-211.743-154.175c-2.731-1.324-5.527-2.515-8.276-3.807m-302.636 19.483c6.846 0 13.638.274 20.361.732l-58.081 100.561c-81.514 16.526-142.676 85.88-142.676 168.897c0 20.854 3.841 40.819 10.913 59.325c.008.021-.008.053 0 .074l-58.228 100.854c-34.551-44.823-54.932-100.229-54.932-160.182c.001-149.255 126.524-270.262 282.643-270.261m168.969 212.035L638.013 797.271c81.076-16.837 141.797-85.875 141.797-168.603c0-20.474-4.086-39.939-10.914-58.155"
+                                stroke-width="30" stroke="#878787" />
+                        </svg>
+                    </span>
                 </div>
-                <div class="flex flex-col mt-7.5 max-md:mt-5">
-                    <label for="name" class="mb-3">Service Area/Zip Code </label>
-                    <input class="py-2 lg:py-3  indent-4 border border-gray-500 rounded-r-10" type="text" name="Name"
-                        placeholder="12345    " id="">
+                    <!-- <input-3></input-3> -->
+                <div class="relative flex">
+                    <input class="w-full py-2 max-md:text-sm lg:py-4 indent-4 border border-gray-500 rounded-r-10  " type="password" name=""
+                        placeholder="Confirm Password" id="">
+                    <span class="absolute right-4 top-2.5 lg:top-5  "><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 1200 1200">
+                            <path fill="#878787"
+                                d="M669.727 273.516c-22.891-2.476-46.15-3.895-69.727-4.248c-103.025.457-209.823 25.517-310.913 73.536c-75.058 37.122-148.173 89.529-211.67 154.174C46.232 529.978 6.431 577.76 0 628.74c.76 44.162 48.153 98.67 77.417 131.764c59.543 62.106 130.754 113.013 211.67 154.174q4.126 2.003 8.276 3.955l-75.072 131.102l102.005 60.286l551.416-960.033l-98.186-60.008zm232.836 65.479l-74.927 129.857c34.47 44.782 54.932 100.006 54.932 159.888c0 149.257-126.522 270.264-282.642 270.264c-6.749 0-13.29-.728-19.922-1.172l-49.585 85.84c22.868 2.449 45.99 4.233 69.58 4.541c103.123-.463 209.861-25.812 310.84-73.535c75.058-37.122 148.246-89.529 211.743-154.174c31.186-32.999 70.985-80.782 77.417-131.764c-.76-44.161-48.153-98.669-77.417-131.763c-59.543-62.106-130.827-113.013-211.743-154.175c-2.731-1.324-5.527-2.515-8.276-3.807m-302.636 19.483c6.846 0 13.638.274 20.361.732l-58.081 100.561c-81.514 16.526-142.676 85.88-142.676 168.897c0 20.854 3.841 40.819 10.913 59.325c.008.021-.008.053 0 .074l-58.228 100.854c-34.551-44.823-54.932-100.229-54.932-160.182c.001-149.255 126.524-270.262 282.643-270.261m168.969 212.035L638.013 797.271c81.076-16.837 141.797-85.875 141.797-168.603c0-20.474-4.086-39.939-10.914-58.155"
+                                stroke-width="30" stroke="#878787" />
+                        </svg>
+                    </span>
                 </div>
             </form>
-            <h2 class="text-2xl font-bold max-md:mb-5 max-md:mt-7.5 mt-12.5 mb-7.5 ">Set your availability this week
-            </h2>
-            <div class="text-sm md:text-base  grid grid-cols-2 xs:grid-cols-4 md:grid-cols-7  justify-items-center  gap-2.5  3xl:gap-5 ">
-                <button
-                    class="border w-full border-light-grey text-light-grey rounded-r-10 py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Mon</button>
-                <button
-                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Tue</button>
-                <button
-                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Wed</button>
-                <button
-                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Thu</button>
-                <button
-                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5 ">Fri</button>
-                <button
-                    class="border w-full border-primary text-primary bg-[#FFF8E7] rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sat</button>
-                <button
-                    class="border w-full border-light-grey text-light-grey rounded-r-10  py-1.5 xs:py-2 xl:py-3 2xl:py-4.5  ">Sun</button>
+            <hr class="border-gray-500  my-7.5 lg:my-10 ">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-base 3xl:text-22px font-semibold">Two-Factor Authentication</h2>
+                    <p class="text-sm 3xl:text-base text-light-grey font-semibold mt-2.5">Add an extra layer of security
+                        to your account</p>
+                </div>
+                <div><img src="img/Group 1000006936.png" alt=""></div>
             </div>
-            <div class="flex justify-end max-sm:w-full">
+             <hr class="border-gray-500  my-7.5 lg:my-10 ">
+            <div>
+                <h2 class="text-base 3xl:text-22px font-semibold mb-5 lg:mb-7.5">Connected Accounts</h2>
+                <div class="flex justify-between items-center mb-5 lg:mb-7.5">
+                    <div class="flex items-center gap-x-2 sm:gap-x-4">
+                        <img class="size-8 xs:size-9 lg:size-10" src="img/devicon_google.png" alt="">
+                        <h3 class="text-sm xs:text-base 3xl:text-22px font-semibold ">Google Account</h3>
+                    </div>
+                    <div>
+                        <button
+                            class="text-light-grey border border-light-grey rounded-r-10 text-sm md:text-base 3xl:text-20px font-semibold py-1 px-3  xs:py-1.5 xs:px-4 lg:py-2 lg:px-6">Disconnect</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-x-2 sm:gap-x-4">
+                        <img class="size-8 xs:size-9 lg:size-10 " src="img/logos_facebook.png" alt="">
+                        <h3 class="text-sm xs:text-base 3xl:text-22px  font-semibold">Facebook Account </h3>
+                    </div>
+                    <div>
+                        <button
+                            class="text-white bg-secondary rounded-r-10 text-sm md:text-base 3xl:text-20p font-semibold py-1 px-3 xs:py-1.5 xs:px-4  lg:py-2 lg:px-6">Connect</button>
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-end max-sm:w-full mt-10">
                 <button
-                    class=" max-sm:w-full  text-white max-md:text-sm md:text-base 3xl:text-xl font-semibold bg-primary  max-md:py-2 max-md:px-6 py-3 px-10 rounded-r-10  mt-8 sm:mt-10">Save
-                    Changes
+                    class=" max-sm:w-full  text-white text-sm md:text-base 3xl:text-20px font-semibold bg-primary  py-2 px-6 lg:py-4 lg:px-7.5 rounded-r-10   ">Update Security Settings
                 </button>
             </div>
         </div>

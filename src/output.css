@@ -535,6 +535,9 @@
   .w-\[6\%\] {
     width: 6%;
   }
+  .w-\[10vw\] {
+    width: 10vw;
+  }
   .w-\[17\%\] {
     width: 17%;
   }
@@ -2219,6 +2222,11 @@
   .coxl\:h-auto {
     @media (width >= 81.25rem) {
       height: auto;
+    }
+  }
+  .coxl\:w-\[10vw\] {
+    @media (width >= 81.25rem) {
+      width: 10vw;
     }
   }
   .coxl\:grid-cols-3 {

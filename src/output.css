@@ -383,6 +383,9 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
+  }
   .mb-30 {
     margin-bottom: calc(var(--spacing) * 30);
   }
@@ -683,6 +686,9 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -925,6 +931,9 @@
   .px-13 {
     padding-inline: calc(var(--spacing) * 13);
   }
+  .px-17 {
+    padding-inline: calc(var(--spacing) * 17);
+  }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
@@ -960,6 +969,9 @@
   }
   .py-17 {
     padding-block: calc(var(--spacing) * 17);
+  }
+  .py-17\.5 {
+    padding-block: calc(var(--spacing) * 17.5);
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -1524,6 +1536,11 @@
   .coxs\:w-\[65\%\] {
     @media (width >= 23.4375rem) {
       width: 65%;
+    }
+  }
+  .coxs\:gap-4 {
+    @media (width >= 23.4375rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .coxs\:gap-10 {

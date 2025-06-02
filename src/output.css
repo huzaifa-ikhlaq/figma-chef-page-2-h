@@ -308,6 +308,9 @@
   .my-7\.5 {
     margin-block: calc(var(--spacing) * 7.5);
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -1349,6 +1352,11 @@
       grid-column: span 2 / span 2;
     }
   }
+  .max-md\:mt-0 {
+    @media (width < 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .max-md\:mt-5 {
     @media (width < 48rem) {
       margin-top: calc(var(--spacing) * 5);
@@ -1818,6 +1826,11 @@
       padding: calc(var(--spacing) * 13.5);
     }
   }
+  .sm\:p-21 {
+    @media (width >= 36rem) {
+      padding: calc(var(--spacing) * 21);
+    }
+  }
   .sm\:p-23 {
     @media (width >= 36rem) {
       padding: calc(var(--spacing) * 23);
@@ -2091,6 +2104,11 @@
       padding-top: calc(var(--spacing) * 9);
     }
   }
+  .md\:pt-13\.5 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 13.5);
+    }
+  }
   .md\:pt-15 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 15);
@@ -2343,6 +2361,11 @@
       padding: calc(var(--spacing) * 7.5);
     }
   }
+  .lg\:p-25 {
+    @media (width >= 62rem) {
+      padding: calc(var(--spacing) * 25);
+    }
+  }
   .lg\:p-27 {
     @media (width >= 62rem) {
       padding: calc(var(--spacing) * 27);
@@ -2403,9 +2426,34 @@
       padding-block: calc(var(--spacing) * 10);
     }
   }
+  .lg\:pt-1 {
+    @media (width >= 62rem) {
+      padding-top: calc(var(--spacing) * 1);
+    }
+  }
   .lg\:pt-8\.5 {
     @media (width >= 62rem) {
       padding-top: calc(var(--spacing) * 8.5);
+    }
+  }
+  .lg\:pt-13 {
+    @media (width >= 62rem) {
+      padding-top: calc(var(--spacing) * 13);
+    }
+  }
+  .lg\:pt-13\.5 {
+    @media (width >= 62rem) {
+      padding-top: calc(var(--spacing) * 13.5);
+    }
+  }
+  .lg\:pt-14 {
+    @media (width >= 62rem) {
+      padding-top: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:pb-10 {
+    @media (width >= 62rem) {
+      padding-bottom: calc(var(--spacing) * 10);
     }
   }
   .lg\:pb-19\.5 {
@@ -2518,6 +2566,11 @@
   .xl\:gap-x-7\.5 {
     @media (width >= 75rem) {
       column-gap: calc(var(--spacing) * 7.5);
+    }
+  }
+  .xl\:p-30 {
+    @media (width >= 75rem) {
+      padding: calc(var(--spacing) * 30);
     }
   }
   .xl\:p-33 {
@@ -2663,6 +2716,11 @@
   .\32 xl\:p-2\.5 {
     @media (width >= 90rem) {
       padding: calc(var(--spacing) * 2.5);
+    }
+  }
+  .\32 xl\:p-40 {
+    @media (width >= 90rem) {
+      padding: calc(var(--spacing) * 40);
     }
   }
   .\32 xl\:p-43 {

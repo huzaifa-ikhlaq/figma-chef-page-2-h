@@ -3229,6 +3229,16 @@
       column-gap: calc(var(--spacing) * 3);
     }
   }
+  .\33 xl\:gap-x-5 {
+    @media (width >= 103.75rem) {
+      column-gap: calc(var(--spacing) * 5);
+    }
+  }
+  .\33 xl\:gap-y-7\.5 {
+    @media (width >= 103.75rem) {
+      row-gap: calc(var(--spacing) * 7.5);
+    }
+  }
   .\33 xl\:px-8 {
     @media (width >= 103.75rem) {
       padding-inline: calc(var(--spacing) * 8);

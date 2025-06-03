@@ -14,81 +14,222 @@
 </head>
 
 <body class="bg-gray-100">
+    <!-- <section-1></section-1> -->
     <section>
-        <h1 class="text-2xl 3xl:text-3xl font-semibold mt-7.5 mb-5 lg:mt-15 lg:mb-7.5">Health & Safety</h1>
-        <div class="bg-white rounded-r-10 border border-gray-400 p-4 sm:px-7.5  md:pt-13.5 md:pb-10">
-            <!-- <UPLOAD-CERTIFICATION></UPLOAD-CERTIFICATION> -->
-            <h2 class="text-lg 3xl:text-2xl  font-semibold mb-5 lg:mb-7.5">Upload Certifications</h2>
-            <div
-                class=" py-15 sm:p-21 lg:p-25 xl:p-30 2xl:p-40 rounded-r-10 border-2 border-dashed border-gray-400 w-full ">
-                <div class="flex justify-center items-center flex-col">
-                    <img class="size-7 lg:size-11 mb-2.5 lg:mb-5 3xl:mb-7.5" src="img/Vector (7).png" alt="">
-                    <h3
-                        class="md:font-semibold text-sm sm:text-base lg:text-lg xl:text-xl 3xl:text-3xl text-light-grey">
-                        Upload or Drag & Drop Resume</h3>
-                </div>
-            </div>
-            <!-- <inputs-area></inputs-area> -->
-            <div class="flex max-md:gap-5 max-md:flex-col mt-7.5 lg:mt-15">
-                <!-- <input-1></input-1> -->
-                <div class="flex flex-col w-full">
-                    <label class="mb-2.5 md:mb-5 font-bold text-base 2xl:text-lg 3xl:text-xl">COVID-19 Vaccination
-                        Status</label>
-                    <div class="flex items-center w-full">
-                        <input
-                            class="border w-full border-light-grey rounded-md indent-4 max-lg:text-sm    py-3.5 md:py-3 "
-                            type="text" name="" placeholder="Yes/No" id="">
-                        <svg class=" relative max-md:absolute right-9 sm:right-12 md:right-7 "
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#3333" d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
-                                stroke-width="0.5" stroke="#3333" />
-                        </svg>
+        <div class="flex items-center justify-between">
+            <h2 class="text-xl sm:text-22px md:text-2xl 3xl:text-3xl font-semibold mt-7.5 mb-5 lg:mt-15 lg:mb-7.5">
+                Personal Information</h2>
+            <button
+                class=" text-white text-sm md:text-base  3xl:text-xl font-semibold bg-primary rounded-r-10 p-2 md:py-3 md:px-6 mt-7.5 mb-5 lg:mt-15 lg:mb-7.5">Import
+                Review</button>
+        </div>
+        <div class="bg-white rounded-r-10 border border-gray-400 p-4  md:px-7.5 md:py-9">
+            <form action="">
+                <div class="relative  md:flex flex-row-reverse gap-x-7 ">
+                    <label class="cursor-pointer" for="upload-file">
+                        <input type="file" name="" class="hidden" id="upload-file">
+                        <img class="max-sm:w-full sm:max-w-75 max-sm:max-h-50  sm:h-full   max-md:w-full object-cover rounded-r-10 "
+                            src="img/Group 1000007351 (3).png" alt="">
+                    </label>
+                    <div class="flex flex-col justify-center w-full  max-md:mt-5">
+                        <!-- <input-1></input-1> -->
+                        <div class="flex flex-col">
+                            <label for="name" class="mb-1 sm:mb-2 lg:mb-3">Name</label>
+                            <input
+                                class="py-3.5 coxl:py-4 max-sm:text-sm w-full indent-4 border border-gray-500 rounded-r-10"
+                                type="text" name="Name" placeholder="Enter name" id="">
+                        </div>
+                        <!-- <input-2></input-2> -->
+                        <div class="flex flex-col mt-5 lg:mt-7.5">
+                            <label for="name" class="mb-1 sm:mb-2 lg:mb-3">Email <span
+                                    class="text-light-grey">(optional)</span></label>
+                            <input
+                                class="py-3.5 coxl:py-4 max-sm:text-sm w-full indent-4 border border-gray-500 rounded-r-10"
+                                type="email" name="Name" placeholder="user123@gmail.com" id="">
+                        </div>
+                        <!-- <input-3></input-3> -->
+                        <div class="flex gap-7.5 mt-5 lg:mt-7.5 ">
+                            <div class="flex flex-col flex-1">
+                                <label for="name" class="mb-1 sm:mb-2 lg:mb-3"> Phone Number</label>
+                                <input
+                                    class="py-3.5 coxl:py-4 max-sm:text-sm w-full indent-4 border border-gray-500 rounded-r-10"
+                                    type="tel" name="Name" placeholder="(123) 456-7890" id="">
+                            </div>
+                            <div class="flex flex-col flex-1 max-md:hidden ">
+                                <h2 class="mb-1 sm:mb-2 lg:mb-3">Star Rating</h2>
+                                <div class="flex gap-2.5 ">
+                                    <img src="img/Star 1.png" alt="">
+                                    <img src="img/Star 1.png" alt="">
+                                    <img src="img/Star 1.png" alt="">
+                                    <img src="img/Star 1.png" alt="">
+                                    <img src="img/Star 1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <!-- <input-2></input-2> -->
-                <div class="flex flex-col w-full">
-                    <label class="mb-2.5 md:mb-5  font-bold text-base 2xl:text-lg 3xl:text-xl">Allergen Handling
-                        Training</label>
-                    <div class="flex items-center w-full">
-                        <input
-                            class="border w-full border-light-grey rounded-md indent-4 max-lg:text-sm py-3.5 md:py-3 "
-                            type="text" name="" placeholder="Yes/No" id="">
-                        <svg class=" relative max-md:absolute right-9 sm:right-12 md:right-7"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#3333" d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
-                                stroke-width="0.5" stroke="#3333" />
-                        </svg>
-                    </div>
+                <!-- <comment-input></comment-input> -->
+                <div class="mt-5 md:mt-7.5">
+                    <label class="block mb-1 sm:mb-2 lg:mb-3" for="">Past Client Testimonial</label>
+                    <textarea class="border border-light-grey rounded-r-10 pt-4 pl-4 pb-20 w-full" name="" id=""
+                        placeholder="Enter a testimonial from past client"></textarea>
                 </div>
-            </div>
-            <!-- <separate-input></separate-input> -->
-            <div class="flex flex-col w-full">
-                <label class="font-bold text-base 2xl:text-lg 3xl:text-xl mb-2.5 md:mb-5 max-md:mt-5 mt-10">Do You Have
-                    Active Liability Insurance?</label>
-                <div class="flex items-center w-full">
-                    <input class="border w-full border-light-grey rounded-md indent-4 max-lg:text-sm py-3.5 md:py-3 "
-                        type="text" name="" placeholder="Yes/No" id="">
-                    <svg class=" relative max-md:absolute right-9 sm:right-12 md:right-7"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#3333" d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z"
-                            stroke-width="0.5" stroke="#3333" />
+                <!-- <button></button> -->
+                <div class="flex justify-end">
+                    <button
+                        class=" text-white rounded-r-10 bg-secondary px-6 py-2.5 md:py-2 md:px-3.5 text-base xl:text-lg 3xl:text-xl mt-5 lg:mt-7.5">+
+                        Add Review</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- <section-2></section-2> -->
+    <section>
+        <div class="flex justify-between items-center">
+            <h2 class="text-xl sm:text-22px md:text-2xl 3xl:text-3xl font-semibold mt-7.5 lg:mt-15 mb-7.5">Recent
+                Reviews</h2>
+            <div class="flex items-center gap-2.5">
+                <div
+                    class="rounded-full bg-white mt-7.5 mb-5 lg:mt-15 lg:mb-7.5 shrink-0 size-9 md:size-12.5 flex justify-center items-center ">
+                    <svg class="size-4 md:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6" />
+                    </svg>
+                </div>
+
+                <div
+                    class="rounded-full bg-primary mt-7.5 mb-5 lg:mt-15 lg:mb-7.5 shrink-0 size-9 md:size-12.5 flex justify-center items-center ">
+                    <svg class="size-4 md:size-6" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        viewBox="0 0 24 24">
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06"
+                            clip-rule="evenodd" stroke-width="0.5" stroke="#fff" />
                     </svg>
                 </div>
             </div>
-            <!-- <UPLOAD-CERTIFICATION></UPLOAD-CERTIFICATION> -->
-            <h2 class="text-lg 3xl:text-2xl  font-semibold mb-5 lg:mb-7.5 mt-7.5 lg:mt-15">Upload Insurance Document</h2>
+        </div>
+        <!-- <cards-aera>---------------</cards-aera> -->
+        <div class="grid sm:grid-cols-2  lg:grid-cols-3 coxl:grid-cols-4 gap-7.5">
+            <!-- <card-1></card-1> -->
             <div
-                class=" py-15 sm:p-21 lg:p-25 xl:p-30 2xl:p-40 rounded-r-10 border-2 border-dashed border-gray-400 w-full ">
-                <div class="flex justify-center items-center flex-col">
-                    <img class="size-7 lg:size-11 mb-2.5 lg:mb-5 3xl:mb-7.5" src="img/Vector (7).png" alt="">
-                    <h3
-                        class="md:font-semibold text-sm sm:text-base lg:text-lg xl:text-xl 3xl:text-3xl text-light-grey">
-                        Upload or Drag & Drop Resume</h3>
+                class="bg-white border border-gray-200 rounded-[20px] flex  justify-center p-4 md:px-7.5 relative mt-7.5">
+                <img class="rounded-full object-cover size-20 border-3 border-primary absolute  -top-10  "
+                    src="img/Group 1000007351 (2).png" alt="">
+                <div class="flex flex-col justify-center mt-13">
+                    <h2 class="text-secondary text-xl font-semibold mb-1 text-center">John Davis</h2>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                    <p class="text-center text-sm 3xl:text-base text-[#3333] mt-5 mb-5.5 md:mb-6 3xl:mb-8">I will
+                        DEFINITELY keep my
+                        subscriptions. The food tastes like it came directly from a mother's kitchen. AMAZING!</p>
+                    <div class="flex  justify-center items-center mb-5.5 3xl:mb-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 16 16">
+                            <g fill="none" stroke="#000" stroke-width="1">
+                                <circle cx="8" cy="6.5" r="2" />
+                                <path stroke-linejoin="round"
+                                    d="M8 .5a5.9 5.9 0 0 0-6 5.83c0 2.17 1 3.3 2.19 4.89s2.64 3 3.8 4.28c1.17-1.31 2.62-2.76 3.81-4.28S14 8.5 14 6.33A6.19 6.19 0 0 0 8 .5z" />
+                            </g>
+                        </svg>
+                        <p class="text-lg">Bay Area</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <card-2></card-2> -->
+            <div
+                class="bg-white border border-gray-200 rounded-[20px] flex  justify-center p-4 md:px-7.5 relative mt-7.5 max-sm:hidden">
+                <img class="rounded-full object-cover size-20 border-3 border-primary absolute  -top-10  "
+                    src="img/Group 1000007351 (2).png" alt="">
+                <div class="flex flex-col justify-center mt-13">
+                    <h2 class="text-secondary text-xl font-semibold mb-1 text-center">John Davis</h2>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                    <p class="text-center text-sm 3xl:text-base text-[#3333] mt-5 mb-5.5 md:mb-6 3xl:mb-8">I will
+                        DEFINITELY keep my
+                        subscriptions. The food tastes like it came directly from a mother's kitchen. AMAZING!</p>
+                    <div class="flex  justify-center items-center mb-5.5 3xl:mb-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 16 16">
+                            <g fill="none" stroke="#000" stroke-width="1">
+                                <circle cx="8" cy="6.5" r="2" />
+                                <path stroke-linejoin="round"
+                                    d="M8 .5a5.9 5.9 0 0 0-6 5.83c0 2.17 1 3.3 2.19 4.89s2.64 3 3.8 4.28c1.17-1.31 2.62-2.76 3.81-4.28S14 8.5 14 6.33A6.19 6.19 0 0 0 8 .5z" />
+                            </g>
+                        </svg>
+                        <p class="text-lg">Bay Area</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <card-3></card-3> -->
+            <div
+                class="bg-white border border-gray-200 rounded-[20px] flex  justify-center p-4 md:px-7.5 relative mt-7.5 max-lg:hidden">
+                <img class="rounded-full object-cover size-20 border-3 border-primary absolute  -top-10  "
+                    src="img/Group 1000007351 (2).png" alt="">
+                <div class="flex flex-col justify-center mt-13">
+                    <h2 class="text-secondary text-xl font-semibold mb-1 text-center">John Davis</h2>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                    <p class="text-center text-sm 3xl:text-base text-[#3333] mt-5 mb-5.5 md:mb-6 3xl:mb-8">I will
+                        DEFINITELY keep my
+                        subscriptions. The food tastes like it came directly from a mother's kitchen. AMAZING!</p>
+                    <div class="flex  justify-center items-center mb-5.5 3xl:mb-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 16 16">
+                            <g fill="none" stroke="#000" stroke-width="1">
+                                <circle cx="8" cy="6.5" r="2" />
+                                <path stroke-linejoin="round"
+                                    d="M8 .5a5.9 5.9 0 0 0-6 5.83c0 2.17 1 3.3 2.19 4.89s2.64 3 3.8 4.28c1.17-1.31 2.62-2.76 3.81-4.28S14 8.5 14 6.33A6.19 6.19 0 0 0 8 .5z" />
+                            </g>
+                        </svg>
+                        <p class="text-lg">Bay Area</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <card-4></card-4> -->
+            <div
+                class="bg-white border border-gray-200 rounded-[20px] flex  justify-center p-4 md:px-7.5 relative mt-7.5 max-coxl:hidden">
+                <img class="rounded-full object-cover size-20 border-3 border-primary absolute  -top-10  "
+                    src="img/Group 1000007351 (2).png" alt="">
+                <div class="flex flex-col justify-center mt-13">
+                    <h2 class="text-secondary text-xl font-semibold mb-1 text-center">John Davis</h2>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                    <p class="text-center text-sm 3xl:text-base text-[#3333] mt-5 mb-5.5 md:mb-6 3xl:mb-8">I will
+                        DEFINITELY keep my
+                        subscriptions. The food tastes like it came directly from a mother's kitchen. AMAZING!</p>
+                    <div class="flex  justify-center items-center mb-5.5 3xl:mb-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 16 16">
+                            <g fill="none" stroke="#000" stroke-width="1">
+                                <circle cx="8" cy="6.5" r="2" />
+                                <path stroke-linejoin="round"
+                                    d="M8 .5a5.9 5.9 0 0 0-6 5.83c0 2.17 1 3.3 2.19 4.89s2.64 3 3.8 4.28c1.17-1.31 2.62-2.76 3.81-4.28S14 8.5 14 6.33A6.19 6.19 0 0 0 8 .5z" />
+                            </g>
+                        </svg>
+                        <p class="text-lg">Bay Area</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section-2></section-2> -->
+    <!-- <section-3></section-3> -->
     <section class="mt-10 md:mt-15">
         <div class="bg-white rounded-r-10 border border-gray-400 py-5 px-3.5 md:p-7.5">
             <div class="flex gap-x-4 items-center sm:justify-between max-sm:w-full">
@@ -102,5 +243,6 @@
         </div>
     </section>
 </body>
+
 
 </html>

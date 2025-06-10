@@ -266,6 +266,9 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .my-1 {
+    margin-block: calc(var(--spacing) * 1);
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -2113,9 +2116,19 @@
       padding-block: calc(var(--spacing) * 10);
     }
   }
+  .md\:pt-0 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
   .md\:pt-4 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:pt-7\.5 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 7.5);
     }
   }
   .md\:pt-9 {
@@ -2441,6 +2454,11 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .lg\:px-7 {
+    @media (width >= 62rem) {
+      padding-inline: calc(var(--spacing) * 7);
+    }
+  }
   .lg\:px-7\.5 {
     @media (width >= 62rem) {
       padding-inline: calc(var(--spacing) * 7.5);
@@ -2541,6 +2559,11 @@
   .xl\:col-span-4 {
     @media (width >= 75rem) {
       grid-column: span 4 / span 4;
+    }
+  }
+  .xl\:mt-10 {
+    @media (width >= 75rem) {
+      margin-top: calc(var(--spacing) * 10);
     }
   }
   .xl\:mt-15 {
